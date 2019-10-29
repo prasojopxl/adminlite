@@ -14,41 +14,6 @@
 <![endif]-->
 <script type="text/javascript" src="assets/js/jquery.js"></script>
 <script type="text/javascript" src="assets/js/myjs.js"></script>
-<style>
-	.contenthitung {
-		margin:0 auto;
-		max-width:700px;
-		padding:30px;
-		background:#ccc;
-	}
-	.contenthitung h1 {
-		margin:0;
-	}
-	.inputitem {
-		display:block;		
-		padding: 5px 0;
-	}
-	.inputitem.statik input[type="text"] {
-		background:none;
-		border:none;
-		color:#057b21;
-	}
-	.inputitem.hasil span, .inputitem.hasil input[type="text"] {
-		background:none;
-		border:none;
-		color:red;
-		font-size:20px;
-	}
-	.inputitem label {
-		display:block;
-	}
-	.hasilcbm {
-	}
-	.hasilcbm input[type="text"]{
-		width:90px;
-	}
-	
-</style>
 </head>
 <body>
 
