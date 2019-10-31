@@ -10,21 +10,33 @@
 <meta name="author" content="Developer"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <link rel="shortcut icon" href="assets/img/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="assets/css/IE8styles.css"/>
 <![endif]-->
 <script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/slick.min.js"></script>
 <script type="text/javascript" src="assets/js/myjs.js"></script>
 </head>
 <body>
-
-
-
 <div id="headerweb">
 </div><!-- endheaderweb -->
 
 <div id="bodyweb">
+    <h5>Font Awesome</h5>
+    <i class="fab fa-facebook-f"></i> <!-- uses solid style -->
+    <i class="fab fa-instagram"></i> <!-- uses regular style -->
+    <i class="fab fa-github-square"></i> <!-- uses brands style -->
+    <p>======================</p>
+    <h5>Slider</h5>
+    <div class="your-class">
+        <div>your content</div>
+        <div>your content</div>
+        <div>your content</div>
+    </div>	
+</div><!-- endbodyweb -->
+
 <div id="footerweb">
-</div><!-- footerweb -->
+</div><!-- endfooterweb -->
 
 </body>
 </html>

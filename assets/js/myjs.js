@@ -1,4 +1,8 @@
 $(document).ready(function () {
-    new WOW().init();
+    // new WOW().init();
+    $(".your-class").slick({
+        dots: false,
+        arrows:true
+    });
 });
 
