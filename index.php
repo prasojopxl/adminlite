@@ -14,6 +14,7 @@
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="assets/css/IE8styles.css"/>
 <![endif]-->
 <script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/wow.min.js"></script>
 <script type="text/javascript" src="assets/js/slick.min.js"></script>
 <script type="text/javascript" src="assets/js/myjs.js"></script>
 </head>
