@@ -1,5 +1,10 @@
 /* CSS */
 
+@color-yellow: #ffd34b;
+@color-green: #4a7750;
+@color-green2: #c1d3c2;
+@color-black:#231f20;
+
 body {
 	color: #333;
 	font-size: 14px;
@@ -79,8 +84,57 @@ img {
 }
 /* --------------------- HEADER LAYOUT --------------------- */
 #headerweb {
+	background: @color-yellow;
+	position: fixed;
+	width: 22%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	-webkit-box-shadow: 4px 4px 7px 0px rgba(50, 50, 50, 0.55);
+	-moz-box-shadow:    4px 4px 7px 0px rgba(50, 50, 50, 0.55);
+	box-shadow:         4px 4px 7px 0px rgba(50, 50, 50, 0.55);	
 }
 
+.wrp-sidemenu {
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;	
+}
+
+.mainlogo {
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+.mainmenu {
+	a {
+		padding: 15px 0;
+		border-bottom: #fff solid 2px;
+		display: block;
+		width: 100%;
+		.animatecss;
+		&:last-child {
+			border-bottom: 0;
+		}
+		&:hover,&.active {
+			background: #fff;
+			width: 107%;
+			.animatecss;
+		}
+	}
+	.imgwrp {
+		width: 100%;
+		svg {
+			width: auto;
+			max-height: 85px;
+		}
+	}
+}
 
 
 /* --------------------- END HEADER LAYOUT --------------------- */
@@ -88,6 +142,46 @@ img {
 /* --------------------- BODYWEB LAYOUT --------------------- */
 
 #bodyweb {
+	margin-left: 24%;
+}
+
+.wrp-itemsummary {
+	height: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	.item-summary {
+		padding: 15px;
+		width: 50%;
+		height: 100%;
+		text-align: center;
+		display: flex;
+	}
+	.content-summary {
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feffff+0,f4f3ee+35,f4f3ee+62,cbc4ad+100 */
+		background: rgb(254,255,255); /* Old browsers */
+		background: -moz-radial-gradient(center, ellipse cover,  rgba(254,255,255,1) 0%, rgba(244,243,238,1) 35%, rgba(244,243,238,1) 62%, rgba(203,196,173,1) 100%); /* FF3.6-15 */
+		background: -webkit-radial-gradient(center, ellipse cover,  rgba(254,255,255,1) 0%,rgba(244,243,238,1) 35%,rgba(244,243,238,1) 62%,rgba(203,196,173,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: radial-gradient(ellipse at center,  rgba(254,255,255,1) 0%,rgba(244,243,238,1) 35%,rgba(244,243,238,1) 62%,rgba(203,196,173,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#cbc4ad',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */			
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;	
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		color: @color-green;
+		h4 {
+			font-size: 20px;
+		}
+		h2 {
+			font-size: 50px;
+		}
+	}	
 }
 
 

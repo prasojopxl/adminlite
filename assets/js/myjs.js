@@ -1,8 +1,10 @@
 $(document).ready(function () {
     new WOW().init();
-    $(".your-class").slick({
-        dots: false,
-        arrows:true
-    });
+	$('#fullpage').fullpage({
+		anchors: ['firstPage','dua','tiga','empat','lima'],
+		autoScrolling: false,
+		fitToSection: false,
+	});
+    
 });
 
