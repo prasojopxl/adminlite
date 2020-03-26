@@ -14,80 +14,21 @@
 <script type="text/javascript" src="assets/js/jquery.js"></script>
 <script type="text/javascript" src="assets/js/wow.min.js"></script>
 <script type="text/javascript" src="assets/js/slick.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.fullPage.js"></script>
 <script type="text/javascript" src="assets/js/myjs.js"></script>
 </head>
 <body>
 <div id="headerweb">
-	<div class="wrp-sidemenu">
-		<a href="#" class="mainlogo"><img src="assets/images/logo.svg" alt=""/></a>
-		<div class="mainmenu">
-			<a href="#" class="active">
-				<div class="imgwrp"><?php include "assets/images/icon_summary.svg" ?></div>
-				<label>SUMMARY</label>
-			</a>
-			<a href="#">
-				<div class="imgwrp"><?php include "assets/images/icon_solarproduction.svg" ?></div>
-				<label>SOLAR PRODUCTION</label>
-			</a>
-			<a href="#">
-				<div class="imgwrp"><?php include "assets/images/icon_earning.svg" ?></div>
-				<label>EARNINGS</label>
-			</a>
-			<a href="#">
-				<div class="imgwrp"><?php include "assets/images/icon_contribution.svg" ?></div>
-				<label>CONTRIBUTIONS</label>
-			</a>
-			<a href="#">
-				<div class="imgwrp"><?php include "assets/images/icon_video.svg" ?></div>
-				<label>VIDEO</label>
-			</a>
-		</div>
-	</div>
 </div><!-- endheaderweb -->
 
 <div id="bodyweb">
-	<div id="fullpage">
-		<div class="section active" id="section0">
-			<div class="wrp-itemsummary">
-				<div class="item-summary">
-					<div class="content-summary">
-						<div class="imgwrp"><?php include "assets/images/icon_totalproduction.svg"?></div>
-						<h4>TOTAL PRODUCTION</h4>
-						<h2>2.59 kWh</h2>
-					</div>
-				</div>
-				<div class="item-summary">
-					<div class="content-summary">
-						<div class="imgwrp"><?php include "assets/images/icon_totalearning.svg"?></div>
-						<h4>TOTAL EARNINGS</h4>
-						<h2>Rp. 15,348,000</h2>
-					</div>
-				</div>
-			</div>
-			<div class="wrp-itemsummary">
-				<div class="item-summary">
-					<div class="content-summary">
-						<div class="imgwrp"><?php include "assets/images/icon_totalproduction.svg"?></div>
-						<h4>TOTAL PRODUCTION</h4>
-						<h2>2.59 kWh</h2>
-					</div>
-				</div>
-				<div class="item-summary">
-					<div class="content-summary">
-						<div class="imgwrp"><?php include "assets/images/icon_totalearning.svg"?></div>
-						<h4>TOTAL EARNINGS</h4>
-						<h2>Rp. 15,348,000</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="section" id="section1">
-			dasd
-		</div>
-		<div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
-		<div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>
-	</div>
+
+		<div class="your-class">
+			<div>your content</div>
+			<div>your content</div>
+			<div>your content</div>
+		</div>	
+		<div class="photos-counter"></div>
+
 </div><!-- endbodyweb -->
 
 <div id="footerweb">
