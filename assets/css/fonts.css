@@ -12,12 +12,12 @@
   
   @font-face {
     font-family: 'Roboto-Regular';
-    src: url('Roboto-Regular.eot');
-    src: url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-Regular.svg#Roboto-Regular') format('svg'),
-         url('Roboto-Regular.ttf') format('truetype'),
-         url('Roboto-Regular.woff') format('woff'),
-         url('Roboto-Regular.woff2') format('woff2');
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg'),
+         url('../fonts/Roboto-Regular.ttf') format('truetype'),
+         url('../fonts/Roboto-Regular.woff') format('woff'),
+         url('../fonts/Roboto-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
@@ -34,7 +34,17 @@
     font-style: normal;
 }
   
-  @font-face {
+@font-face {
+     font-family: 'PoppinsBold';
+     src: url('../fonts/PoppinsBold.eot');
+     src: url('../fonts/PoppinsBold.eot') format('embedded-opentype'),
+          url('../fonts/PoppinsBold.woff2') format('woff2'),
+          url('../fonts/PoppinsBold.woff') format('woff'),
+          url('../fonts/PoppinsBold.ttf') format('truetype'),
+          url('../fonts/PoppinsBold.svg#PoppinsBold') format('svg');
+} 
+
+@font-face {
     font-family: 'Poppins-Medium';
     src: url('../fonts/Poppins-Medium.eot');
     src: url('../fonts/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
