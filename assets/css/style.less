@@ -456,9 +456,34 @@ h4 {
 			display: flex;
 			align-items: center;
 		}
+		.left, .right {
+			&.md-8 {
+				flex: 2.3;
+			}
+		}
 	}
 	&.header {
 		margin-bottom: 25px;
+	}
+	&.white {
+		.feature-middle {
+			background: #fff;
+			flex: 1;
+			margin: 25px 0;
+			padding: 20px;
+			flex-direction: column;
+			border-radius: 10px;
+			.shadow;
+		}
+	}
+}
+
+.feature-middle {
+	.wrp-chart {
+		margin: 0 auto;
+		canvas {
+			margin: 0 auto;
+		}
 	}
 }
 
@@ -569,12 +594,46 @@ h4 {
 		background: @color-blue3;
 		padding: 10px 15px;
 		border-radius: 10px;
+		height: 100%;
+		min-height: 60px;
+		display: flex;
+		align-items: center;
 	}
 	.left {
 		display: flex;
 		flex-direction: column;
 		text-align: left;
+		align-items: flex-start !important;
 	}
+}
+
+h4 {
+	&.title-section {
+		font-family: @font-Poppins-Medium;
+		font-size: 16px;
+		color: @color-black;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+.wrp-chart {
+	display: block;
+	position: relative;
+}
+
+.chartjs-tooltip {
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -59%);
+	text-align: center;
+	display: block;
+	left: 0;
+	right: 0;
+	margin-top: -15px;
+	font-family: @font-Poppins-Medium;
+	font-size: 38px;
+	color: @color-blue;
 }
 /* --------------------- END BODYWEB LAYOUT --------------------- */
 

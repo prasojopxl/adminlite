@@ -14,7 +14,11 @@
 <script type="text/javascript" src="assets/js/jquery.js"></script>
 <script type="text/javascript" src="assets/js/wow.min.js"></script>
 <script type="text/javascript" src="assets/js/slick.min.js"></script>
+<script type="text/javascript" src="assets/js/chart.bundle.js"></script>
+<script type="text/javascript" src="assets/js/data-chart.js"></script>
 <script type="text/javascript" src="assets/js/myjs.js"></script>
+
+
 </head>
 <body class="pages-fluid">
     <div class="wrp-sidebar">
@@ -116,32 +120,60 @@
         </div>
 
         <div class="wrp-section">
-            <div class="contents">
-                <div class="feature-small">
-                    <div class="left">
-                        <h4>150</h4>
-                        New Orders
-                    </div>
-                    <div class="right">
-                        <div class="imgwrp"><img src="assets/images/icon-order.svg" alt=""/></div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-small">
+                        <div class="left">
+                            <h4>150</h4>
+                            New Orders
+                        </div>
+                        <div class="right">
+                            <div class="imgwrp"><img src="assets/images/icon-order.svg" alt=""/></div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-small">
+                        <div class="left">
+                            <h4>53%</h4>
+                            Bounce Rate
+                        </div>
+                        <div class="right">
+                            <div class="imgwrp"><img src="assets/images/icon-graf.svg" alt=""/></div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-small">
+                        <div class="left">
+                            <h4>44</h4>
+                            User Registrations
+                        </div>
+                        <div class="right">
+                            <div class="imgwrp"><img src="assets/images/icon-user-plus.svg" alt=""/></div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="wrp-section white">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="feature-middle">
+                        <h4 class="title-section">Sales</h4>
+                        <div class="wrp-chart">
+                            <canvas id="chart-line" width="220px" height="240"></canvas> 
+                        </div>                        
                     </div>
                 </div>
-                <div class="feature-small">
-                    <div class="left">
-                        <h4>150</h4>
-                        New Orders
-                    </div>
-                    <div class="right">
-                        <div class="imgwrp"><img src="assets/images/icon-order.svg" alt=""/></div>
-                    </div>
-                </div>
-                <div class="feature-small">
-                    <div class="left">
-                        <h4>150</h4>
-                        New Orders
-                    </div>
-                    <div class="right">
-                        <div class="imgwrp"><img src="assets/images/icon-order.svg" alt=""/></div>
+                <div class="col-md-4">
+                    <div class="feature-middle">
+                        <h4 class="title-section">Donut Chart</h4>
+                        <div class="wrp-chart">
+                            <canvas id="chart-donut" width="220px" height="240"></canvas> 
+                            <div class="chartjs-tooltip">90%</div>
+                        </div>
                     </div>
                 </div>
             </div>
