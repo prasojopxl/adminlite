@@ -1,8 +1,8 @@
-$(function () {/*from   w ww .  ja va2 s  . c o  m*/
+$(document).ready(function () {
     var ctx = document.getElementById("chart-donut").getContext('2d');
     var data = {
         datasets: [{
-            data: [10, 20, 30],
+            data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor()],
             backgroundColor: [
                 '#FFB946',
                 '#7197FE',
@@ -19,7 +19,7 @@ $(function () {/*from   w ww .  ja va2 s  . c o  m*/
         type: 'doughnut',
         data: data,
         options: {
-            responsive: false,
+            responsive: true,
             maintainAspectRatio: false,
             legend: {
                 position: 'bottom',
@@ -30,39 +30,67 @@ $(function () {/*from   w ww .  ja va2 s  . c o  m*/
         }
     });
 
-    
-    var ctx_2 = document.getElementById("chart-line").getContext('2d');
-    var data_2 = {
-        datasets: [{
-            data: [10, 20, 30],
-            backgroundColor: [
-                '#FFB946',
-                '#7197FE',
-                '#F7685B',
-            ],
-        }],
-        labels: [
-            'Active',
-            'Completed',
-            'Ended'
-        ]
-    };
-    var myDoughnutChart_2 = new Chart(ctx_2, {
+    var config = {
         type: 'line',
-        data: data_2,
+        data: {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+            datasets: [{
+                label: 'Unfilled',
+                fill: false,
+                backgroundColor: "#7197FE",
+                borderColor: "#7197FE",
+                data: [
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor(),
+                    randomScalingFactor()
+                ],
+            }, ]
+        },
         options: {
-            responsive: false,
+            responsive: true,
             maintainAspectRatio: false,
             legend: {
-                position: 'bottom',
-                labels: {
-                    boxWidth: 12
-                }
+                display: false
+            },
+            title: {
+                display: false,
+            },
+            tooltips: {
+                mode: 'index',
+                intersect: false,
+            },
+            hover: {
+                mode: 'nearest',
+                intersect: true
+            },
+            scales: {
+                xAxes: [{
+                    display: true,
+                    scaleLabel: {
+                        display: false,
+                        labelString: 'Month'
+                    }
+                }],
+                yAxes: [{
+                    display: true,
+                    scaleLabel: {
+                        display: false,
+                        labelString: 'Value'
+                    }
+                }]
             }
         }
+    };
+
+    window.onload = function() {
+        var ctx = document.getElementById('chart-line').getContext('2d');
+        window.myLine = new Chart(ctx, config);
+    };
+   
+
+
     });
-
-
-
-
-});
