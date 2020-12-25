@@ -73,14 +73,26 @@ $(document).ready(function () {
                     scaleLabel: {
                         display: false,
                         labelString: 'Month'
-                    }
+                    },
+                    gridLines: {
+                        display: false,
+                    },                    
                 }],
                 yAxes: [{
                     display: true,
-                    scaleLabel: {
-                        display: false,
-                        labelString: 'Value'
-                    }
+                    position: 'right',
+                    offset: true,
+
+                    gridLines: {
+                        drawTicks: true,
+                        display: true,
+                        drawBorder: false,
+                    },    
+                    ticks: {
+                        beginAtZero: true,
+                        maxTicksLimit: 5,
+                        padding: 0,
+                    },
                 }]
             }
         }
