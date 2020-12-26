@@ -184,8 +184,14 @@ h4 {
 		background: @color-red;
 		color: @color-red2;
 	}	
+	&--green {
+		background: @color-green;
+	}
 	&:hover {
 		color: #fff;
+	}
+	&--medium {
+		min-width: 110px;
 	}
 }
 
@@ -681,6 +687,63 @@ h4 {
 	color:blue;
 	background: url("../images/arrow-down-small.svg") no-repeat center;
 }
+
+table.dataTable tr th.select-checkbox.selected::after {
+    content: "✔";
+    margin-top: -11px;
+    margin-left: -4px;
+    text-align: center;
+    text-shadow: rgb(176, 190, 217) 1px 1px, rgb(176, 190, 217) -1px -1px, rgb(176, 190, 217) 1px -1px, rgb(176, 190, 217) -1px 1px;
+}
+
+.wrp-tablestyle {
+	table {
+		&.dataTable {
+			thead {
+				th,td {
+					border-bottom: @color-blue3 solid 1px;
+					padding: 20px 10px;
+					&.select-checkbox:after {
+						top: auto;
+					}	
+				}
+			}
+			thead, tbody {
+				th, td {
+					&.select-checkbox:before {
+						top: 50% !important;
+						border: @color-gray solid 1px;
+						width: 16px;
+						height: 16px;
+					}
+					&.select-checkbox:after {
+						margin-top: 0;
+					}
+				}
+			}
+			&.display {
+				tbody {
+					td{
+						background: none !important;
+					}
+					th,td {
+						padding: 15px 10px;
+					}
+				}
+			}
+			tr {
+				background: none;
+				&.odd {
+					background: none !important;
+				}
+			}
+			&.no-footer {
+				border-bottom: 0;
+			}
+		}
+	}
+}
+
 /* --------------------- END BODYWEB LAYOUT --------------------- */
 
 /* --------------------- FOOTER LAYOUT --------------------- */
