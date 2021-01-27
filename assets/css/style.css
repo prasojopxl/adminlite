@@ -697,6 +697,32 @@ table.dataTable tr th.select-checkbox.selected::after {
 .wrp-tablestyle table.dataTable.no-footer {
   border-bottom: 0;
 }
+.maintitle h2 {
+  font-family: "Poppins-Medium";
+  font-size: 24px;
+  color: #373737;
+}
+.breadcump {
+  font-family: "Roboto-Regular";
+  font-size: 16px;
+}
+.breadcump li {
+  display: inline-block;
+}
+.breadcump li::after {
+  content: "/";
+  display: inline;
+  margin: 0 5px;
+}
+.breadcump li:last-child::after {
+  content: none;
+}
+.breadcump li a {
+  color: #7197FE;
+}
+.breadcump li:last-child a {
+  color: #8B8B8B;
+}
 /* --------------------- END BODYWEB LAYOUT --------------------- */
 /* --------------------- FOOTER LAYOUT --------------------- */
 /* --------------------- END FOOTER LAYOUT --------------------- */

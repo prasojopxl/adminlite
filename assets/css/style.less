@@ -744,6 +744,40 @@ table.dataTable tr th.select-checkbox.selected::after {
 	}
 }
 
+.maintitle {
+	h2 {
+		font-family: @font-Poppins-Medium;
+		font-size: 24px;
+		color: @color-black;
+	}
+}
+
+.breadcump {
+	font-family: @font-Roboto-Regular;
+	font-size: 16px;
+	li {
+		display: inline-block;
+		&::after {
+			content: "/";
+			display: inline;
+			margin: 0 5px;
+		}
+		&:last-child {
+			&::after {
+				content: none;
+			}
+		}
+		a {
+			color: @color-blue;
+		}
+		&:last-child {
+			a {
+				color: @color-gray;
+			}
+		}
+	}
+}
+
 /* --------------------- END BODYWEB LAYOUT --------------------- */
 
 /* --------------------- FOOTER LAYOUT --------------------- */
