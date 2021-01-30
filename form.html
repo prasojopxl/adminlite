@@ -9,16 +9,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 <link rel="shortcut icon" href="assets/images/favicon.ico"/>
 <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 <!--[if IE 8]><link rel="stylesheet" type="text/css" href="assets/css/IE8styles.css"/>
 <![endif]-->
 <script type="text/javascript" src="assets/js/jquery.js"></script>
 <script type="text/javascript" src="assets/js/wow.min.js"></script>
 <script type="text/javascript" src="assets/js/slick.min.js"></script>
 <script type="text/javascript" src="assets/js/chart.bundle.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script type="text/javascript" src="https://www.chartjs.org/samples/latest/utils.js"></script>
-<script type="text/javascript" src="assets/js/data-chart.js"></script>
 <script type="text/javascript" src="assets/js/datatables.js"></script>
 <script type="text/javascript" src="assets/js/datatables.select.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 
 <script type="text/javascript" src="assets/js/myjs.js"></script>
@@ -142,7 +145,34 @@
                         <div class="feature-middle">
                             <div class="title-row">
                                 <h4 class="title-section line">Quick Example</h4>
-                            </div>               
+                            </div>   
+                            <form action="">
+                                <div class="itemform">
+                                    <label>Email Address</label>
+                                    <input type="email" placeholder="Enter email"/>
+                                </div>
+                                <div class="itemform">
+                                    <label>Password</label>
+                                    <input type="password" placeholder="Password"/>
+                                </div>
+                                <div class="itemform">
+                                    <label>File Input</label>
+                                    <div class="custom-upload">
+                                        <input type="file">
+                                        <div class="fake-file">
+                                            <input class="disbaleunput" disabled="disabled" >
+                                        </div>
+                                    </div>                                    
+                                </div>
+                                <div class="itemform iteminput">
+                                    <input type="checkbox" id="test1" />
+                                    <label for="test1">Remember Me</label>
+                                </div>
+            
+                                <div class="itemform">
+                                    <input type="submit" value="Submit" class="btn btn--full"/>
+                                </div>
+                            </form>            
                         </div>
                     </div>                    
                     <div class="wrp-section white">
@@ -150,6 +180,23 @@
                             <div class="title-row">
                                 <h4 class="title-section line">Horizontal Form</h4>
                             </div>               
+                            <form>
+                                <div class="itemform-flex">
+                                    <label>Email</label>
+                                    <input type="text" placeholder="Enter email"/>
+                                </div>
+                                <div class="itemform-flex">
+                                    <label>Password</label>
+                                    <input type="text" placeholder="Enter password"/>
+                                </div>
+                                <div class="iteminput itemform-flex">
+                                    <input type="checkbox" id="test2" />
+                                    <label for="test2">Remember Me</label>
+                                </div>
+                                <div class="itemform-flex">
+                                    <input type="button" value="Submit" class="btn btn--full"/>
+                                </div>
+                            </form>
                         </div>
                     </div>                    
                 </div>
@@ -159,6 +206,118 @@
                             <div class="title-row">
                                 <h4 class="title-section line">Elements</h4>
                             </div>               
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <form action="">
+                                        <div class="itemform">
+                                            <label>Text</label>
+                                            <input type="email" placeholder="Enter email"/>
+                                        </div>
+                                        <div class="itemform">
+                                            <label>Textarea</label>
+                                            <textarea placeholder="Enter"></textarea>
+                                        </div>
+                                    </form>       
+                                </div>
+                                <div class="col-lg-6">
+                                    <form action="">
+                                        <div class="itemform">
+                                            <label>Text</label>
+                                            <input type="email" placeholder="Enter email" disabled/>
+                                        </div>
+                                        <div class="itemform">
+                                            <label>Textarea</label>
+                                            <textarea placeholder="Enter" disabled></textarea>
+                                        </div>
+                                    </form>       
+                                </div>
+                            </div>
+                            <div class="itemform">
+                                <label><img src="assets/images/icon-check-green.svg" alt=""/> Input with success</label>
+                                <input type="text" placeholder="Enter ..." class="green"/>
+                            </div>
+                            <div class="itemform">
+                                <label><img src="assets/images/icon-warning.svg" alt=""/> Input with warning</label>
+                                <input type="text" placeholder="Enter ..." class="yellow"/>
+                            </div>
+                            <div class="itemform">
+                                <label><img src="assets/images/icon-error.svg" alt=""/> Input with error</label>
+                                <input type="text" placeholder="Enter ..." class="red2"/>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="iteminput">
+                                        <input type="checkbox" id="test3" />
+                                        <label for="test3">Checkbox</label>
+                                    </div>
+                                    <div class="iteminput">
+                                        <input type="checkbox" id="test4" />
+                                        <label for="test4">Checkbox checked</label>
+                                    </div>        
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="iteminput">
+                                        <label class="inputradio">
+                                            <input type="radio" name="radio" checked/>
+                                            <span>Radio</span>
+                                        </label>                                
+                                        <label class="inputradio">
+                                            <input type="radio" name="radio"/>
+                                            <span>Radio checked</span>
+                                        </label>                                
+                                    </div>        
+                                </div>
+                            </div>
+                            <div class="iteminput">
+                                <label>Select</label>
+                                <div class="select-box-wrapper">
+                                    <div class="select-box">
+                                        <select id="color">
+                                            <option value="red">Option1</option>
+                                            <option value="white">Option2</option>
+                                            <option value="blue">Option3</option>
+                                        </select>
+                                    </div>
+                                </div>                             
+                            </div>
+                            <div class="iteminput">
+                                <label>Select Multiple</label>
+                                <label for="multi-select">Multiple Select</label>
+                                <div class="select select--multiple">
+                                    <select id="multi-select" multiple>
+                                        <option value="Option 1">Option 1</option>
+                                        <option value="Option 2">Option 2</option>
+                                        <option value="Option 3">Option 3</option>
+                                        <option value="Option 4">Option 4</option>
+                                        <option value="Option 5">Option 5</option>
+                                        <option value="Option length">Option that has too long of a value to fit</option>
+                                    </select>
+                                    <span class="focus"></span>
+                                </div>
+                            </div>
+                            <div class="iteminput">
+                                <div class="wrp-switchmode">                                
+                                    <div class="wrp-switchicon">
+                                        <div class="thub"></div>
+                                    </div>                  
+                                    Toggle switch  
+                                </div>
+                                <div class="wrp-switchmode">                                
+                                    <div class="wrp-switchicon">
+                                        <div class="thub"></div>
+                                    </div>                  
+                                    Toggle switch Active
+                                </div>
+                            </div>
+                            <div class="iteminput">
+                                <p>
+                                    <label for="amount">Slider:</label>
+                                    <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                                  </p>
+                                   
+                                  <div id="slider"></div>                                
+                            </div>
+                    
                         </div>
                     </div>                    
                 </div>

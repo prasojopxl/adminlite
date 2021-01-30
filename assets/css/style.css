@@ -237,6 +237,9 @@ h4 {
   text-align: right;
   display: block;
 }
+.iteminput label {
+  font-size: 14px;
+}
 .iteminput .text-left {
   text-align: left;
   margin-top: 20px;
@@ -327,6 +330,33 @@ h4 {
 .iteminput [type="checkbox"]:checked:focus + label:before,
 .iteminput [type="checkbox"]:not(:checked):focus + label:before {
   background: #57C87A;
+}
+.iteminput .wrp-switchmode {
+  margin-top: 0;
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+.iteminput .wrp-switchmode .wrp-switchicon {
+  margin-right: 15px;
+  margin-left: 0;
+}
+.iteminput .wrp-switchmode .wrp-switchicon.dark {
+  background: #7197FE;
+}
+.iteminput .wrp-switchmode .wrp-switchicon.dark .thub {
+  background: #fff;
+  border: #F8F9FF;
+}
+.iteminput .ui-widget.ui-widget-content {
+  background: #F8F9FF;
+  border: none;
+}
+.iteminput .ui-slider-horizontal {
+  height: 6px;
+}
+.iteminput .ui-slider-horizontal .ui-slider-handle {
+  background: url("../images/handleslider.svg") no-repeat center;
+  border: none;
 }
 .pages-fluid {
   justify-content: space-between;
@@ -1102,6 +1132,180 @@ table.dataTable tr th.select-checkbox.selected::after {
 }
 .mycustom-datatable .line.blue2 {
   background: #BFCBFF;
+}
+.itemform {
+  margin-bottom: 15px;
+}
+.itemform label {
+  display: block;
+  font-family: "Poppins-Regular";
+  margin-bottom: 5px;
+}
+.itemform input[type="email"],
+.itemform input[type="text"],
+.itemform input[type="number"],
+.itemform input[type="password"],
+.itemform textarea {
+  display: block;
+  border: #E3E3E3 solid 1px;
+  padding: 5px 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+.itemform input[type="email"].green,
+.itemform input[type="text"].green,
+.itemform input[type="number"].green,
+.itemform input[type="password"].green,
+.itemform textarea.green {
+  border: #57C87A solid 1px;
+  background: url("../images/icon-check-green.svg") no-repeat 99% center;
+  padding-right: 25px;
+}
+.itemform input[type="email"].yellow,
+.itemform input[type="text"].yellow,
+.itemform input[type="number"].yellow,
+.itemform input[type="password"].yellow,
+.itemform textarea.yellow {
+  border: #FFB946 solid 1px;
+}
+.itemform input[type="email"].red2,
+.itemform input[type="text"].red2,
+.itemform input[type="number"].red2,
+.itemform input[type="password"].red2,
+.itemform textarea.red2 {
+  border: #FF6B93 solid 1px;
+  background: url("../images/icon-error.svg") no-repeat 99% center;
+  padding-right: 25px;
+}
+.itemform textarea {
+  min-height: 100px;
+}
+.itemform.iteminput {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.itemform-flex {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 100px;
+}
+.itemform-flex label {
+  display: block;
+  font-family: "Poppins-Regular";
+  margin-bottom: 5px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.itemform-flex input[type="email"],
+.itemform-flex input[type="text"],
+.itemform-flex input[type="number"],
+.itemform-flex input[type="password"] {
+  display: block;
+  border: #E3E3E3 solid 1px;
+  padding: 5px 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+.custom-upload {
+  position: relative;
+}
+.custom-upload input[type=file] {
+  outline: none;
+  position: relative;
+  text-align: right;
+  -moz-opacity: 0 ;
+  opacity: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.custom-upload .fake-file {
+  background: url(../images/btn-upload.svg) center right no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  line-height: 100%;
+}
+.custom-upload .fake-file .disbaleunput {
+  background: none;
+  display: block;
+  border: #E3E3E3 solid 1px;
+  padding: 5px 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+.custom-upload .fake-file input {
+  height: 35px;
+}
+.inputradio {
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.inputradio input {
+  position: absolute;
+  left: -9999px;
+}
+.inputradio input:checked + span {
+  border: none;
+}
+.inputradio input:checked + span:before {
+  background: url("../images/radio-checked.svg") no-repeat left center;
+}
+.inputradio span {
+  display: flex;
+  align-items: center;
+  border-radius: 99em;
+  transition: 0.25s ease;
+}
+.inputradio span:before {
+  display: flex;
+  flex-shrink: 0;
+  content: "";
+  background: url("../images/radio-blank.svg") no-repeat left center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 0.375em;
+  transition: 0.25s ease;
+}
+.select-box-wrapper {
+  border: #E3E3E3 solid 1px;
+  border-radius: 5px;
+}
+select {
+  width: 100%;
+}
+.select-box {
+  background-color: red;
+  background: #fff url("../images/arrow-select.svg") no-repeat 98% 50%;
+  border: none;
+  border-radius: 5px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 5px 10px;
+  width: 100%;
+}
+.select-box select {
+  color: #8B8B8B;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 14px;
+}
+.select-box select:focus {
+  outline: none;
 }
 /* --------------------- END BODYWEB LAYOUT --------------------- */
 /* --------------------- FOOTER LAYOUT --------------------- */

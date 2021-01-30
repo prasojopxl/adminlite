@@ -136,7 +136,22 @@ $(document).ready(function () {
             $('#MyTableCheckAllButton i').attr('class', 'far fa-minus-square');
         }
     });	
-	
+
+	$('.custom-upload input[type=file]').change(function(){
+		$(this).next().find('input').val($(this).val());
+	});	
 	
 });
+
+$( function() {
+    $( "#slider" ).slider({
+      value:100,
+      min: 0,
+      max: 500,
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.value );
+      }
+    });
+    $( "#amount" ).val( "$" + $( "#slider" ).slider( "value" ) );
+  } );
 

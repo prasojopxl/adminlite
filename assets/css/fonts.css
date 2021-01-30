@@ -70,12 +70,12 @@
 
 @font-face {
      font-family: 'Poppins-Regular';
-     src: url('Poppins-Regular.eot');
-     src: url('Poppins-Regular.eot?#iefix') format('embedded-opentype'),
-          url('Poppins-Regular.svg#Poppins-Regular') format('svg'),
-          url('Poppins-Regular.ttf') format('truetype'),
-          url('Poppins-Regular.woff') format('woff'),
-          url('Poppins-Regular.woff2') format('woff2');
+     src: url('../fonts/Poppins-Regular.eot');
+     src: url('../fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Poppins-Regular.svg#Poppins-Regular') format('svg'),
+          url('../fonts/Poppins-Regular.ttf') format('truetype'),
+          url('../fonts/Poppins-Regular.woff') format('woff'),
+          url('../fonts/Poppins-Regular.woff2') format('woff2');
      font-weight: normal;
      font-style: normal;
 }
