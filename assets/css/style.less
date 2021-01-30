@@ -468,6 +468,9 @@ h4 {
 }
 
 .wrp-section {
+	&.mainbody {
+		padding-bottom: 20px;
+	}
 	.contents {
 		display: flex;
 		justify-content: space-between;
@@ -1139,6 +1142,7 @@ table.dataTable tr th.select-checkbox.selected::after {
 	}
 	.dataTables_paginate {
 		padding: 0;
+		margin: 15px 0;
 	}
 	.dataTables_wrapper .dataTables_paginate .paginate_button {
 		color: @color-blue !important;
@@ -1168,6 +1172,28 @@ table.dataTable tr th.select-checkbox.selected::after {
 	}	
 	.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
 		border: none;
+	}
+	.line {
+		background: @color-gray2;
+		height: 7px;
+		min-width: 1px;
+		border-radius: 30px;
+		display: block;
+		&.blue {
+			background: @color-blue;
+		}
+		&.yellow {
+			background: @color-yellow;
+		}
+		&.green {
+			background: @color-green;
+		}
+		&.red2 {
+			background: @color-red2;
+		}
+		&.blue2 {
+			background: @color-blue2;
+		}
 	}
 }
 

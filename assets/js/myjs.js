@@ -51,6 +51,37 @@ $(document).ready(function () {
 		"autoWidth": false,
 		searching: false,
 		info: false,
+		"pageLength": 5
+		// "sDom": '<"top"ip>rt<"bottom"fl><"clear">'
+    } );	
+
+	//List Data Tabel
+    $('#table-full').DataTable( {
+        "scrollX": true,
+		"autoWidth": false,
+		searching: false,
+		info: false,
+		"pageLength": 5,
+		"sDom": '<"top"ip>rt<"bottom"fl><"clear">'
+    } );	
+
+	//List Data Tabel
+    $('#table-condensed').DataTable( {
+        "scrollX": true,
+		"autoWidth": false,
+		searching: false,
+		info: false,
+		"pageLength": 5,
+		"sDom": '<"top"ip>rt<"bottom"fl><"clear">'
+    } );	
+
+	//List Data Tabel
+    $('#table-striped').DataTable( {
+        "scrollX": true,
+		"autoWidth": false,
+		searching: false,
+		info: false,
+		"pageLength": 5,
 		// "sDom": '<"top"ip>rt<"bottom"fl><"clear">'
     } );	
 

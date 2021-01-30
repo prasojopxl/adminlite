@@ -429,6 +429,9 @@ h4 {
   -o-transition: all ease-out 0.4s;
   transition: all ease-out 0.4s;
 }
+.wrp-section.mainbody {
+  padding-bottom: 20px;
+}
 .wrp-section .contents {
   display: flex;
   justify-content: space-between;
@@ -1047,6 +1050,7 @@ table.dataTable tr th.select-checkbox.selected::after {
 }
 .mycustom-datatable .dataTables_paginate {
   padding: 0;
+  margin: 15px 0;
 }
 .mycustom-datatable .dataTables_wrapper .dataTables_paginate .paginate_button {
   color: #7197FE !important;
@@ -1076,6 +1080,28 @@ table.dataTable tr th.select-checkbox.selected::after {
 }
 .mycustom-datatable .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
   border: none;
+}
+.mycustom-datatable .line {
+  background: #F4F4F4;
+  height: 7px;
+  min-width: 1px;
+  border-radius: 30px;
+  display: block;
+}
+.mycustom-datatable .line.blue {
+  background: #7197FE;
+}
+.mycustom-datatable .line.yellow {
+  background: #FFB946;
+}
+.mycustom-datatable .line.green {
+  background: #57C87A;
+}
+.mycustom-datatable .line.red2 {
+  background: #FF6B93;
+}
+.mycustom-datatable .line.blue2 {
+  background: #BFCBFF;
 }
 /* --------------------- END BODYWEB LAYOUT --------------------- */
 /* --------------------- FOOTER LAYOUT --------------------- */
