@@ -492,7 +492,7 @@ h4 {
 		.feature-middle {
 			background: #fff;
 			flex: 1;
-			margin: 25px 0;
+			margin: 15px 0;
 			padding: 20px;
 			flex-direction: column;
 			border-radius: 10px;
@@ -637,6 +637,10 @@ h4 {
 		color: @color-black;
 		width: 100%;
 		margin-bottom: 20px;
+	}
+	&.line {
+		border-bottom: @color-gray solid 1px;
+		padding-bottom: 10px;
 	}
 }
 
@@ -949,11 +953,28 @@ table.dataTable tr th.select-checkbox.selected::after {
 	&.dataTables_wrapper .dataTables_paginate .paginate_button {
 		color: @color-blue !important;
 		border: transparent;
+		&.previous {
+			text-indent: -1000px;	
+			position: relative;
+			background:url("../images/paging-left.svg") no-repeat center;
+			&:hover {
+				background: url("../images/paging-left.svg") no-repeat center @color-blue3;
+			}
+		}
+		&.next {
+			text-indent: -1000px;	
+			position: relative;
+			background:url("../images/paging-right.svg") no-repeat center;
+			&:hover {
+				background: url("../images/paging-right.svg") no-repeat center @color-blue3;
+			}
+		}		
 	}
 	&.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
 		background: none;
 		background: @color-blue;
 		color: #fff !important;
+		border: none;
 	}
 }
 
@@ -1104,6 +1125,49 @@ table.dataTable tr th.select-checkbox.selected::after {
 	}
 	.fc-toolbar {
 		margin-bottom: 30px;
+	}
+}
+
+.mycustom-datatable {
+	.dataTables_length {
+		display: none;
+	}
+	.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+		background: @color-blue;
+		color: #fff !important;
+		border: none;
+	}
+	.dataTables_paginate {
+		padding: 0;
+	}
+	.dataTables_wrapper .dataTables_paginate .paginate_button {
+		color: @color-blue !important;
+		border: transparent;
+		&.previous {
+			text-indent: -1000px;	
+			position: relative;
+			background:url("../images/paging-left.svg") no-repeat center;
+			&:hover {
+				background: url("../images/paging-left.svg") no-repeat center @color-blue3;
+			}
+		}
+		&.next {
+			text-indent: -1000px;	
+			position: relative;
+			background:url("../images/paging-right.svg") no-repeat center;
+			&:hover {
+				background: url("../images/paging-right.svg") no-repeat center @color-blue3;
+			}
+		}
+	}
+	.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+		background: none;
+		background: @color-blue;
+		color: #fff !important;
+		border: none;
+	}	
+	.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+		border: none;
 	}
 }
 

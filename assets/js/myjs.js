@@ -45,6 +45,15 @@ $(document).ready(function () {
 		}
 	});
 	
+	//List Data Tabel
+    $('#table-bordered').DataTable( {
+        "scrollX": true,
+		"autoWidth": false,
+		searching: false,
+		info: false,
+		// "sDom": '<"top"ip>rt<"bottom"fl><"clear">'
+    } );	
+
 
 	// table 2
     let myTable = $('#example2').DataTable({
