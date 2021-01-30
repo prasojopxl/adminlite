@@ -143,15 +143,5 @@ $(document).ready(function () {
 	
 });
 
-$( function() {
-    $( "#slider" ).slider({
-      value:100,
-      min: 0,
-      max: 500,
-      slide: function( event, ui ) {
-        $( "#amount" ).val( "$" + ui.value );
-      }
-    });
-    $( "#amount" ).val( "$" + $( "#slider" ).slider( "value" ) );
-  } );
+
 
