@@ -3,10 +3,9 @@ $(document).ready(function () {
 	
 	// button switch dark
 	$(".wrp-switchicon").click(function(){
-		$(this).toggleClass("dark")
+		$(this).toggleClass("dark");
+		$("body").toggleClass("dark")
 	});
-
-
 	
 	// data tables
 	let example = $('#example').DataTable({
@@ -141,6 +140,14 @@ $(document).ready(function () {
 		$(this).next().find('input').val($(this).val());
 	});	
 	
+	$(".nav").click(function(){
+		$(".wrp-sidebar").toggleClass("small");
+		$(".page-wrapper").toggleClass("big");
+	})
+
+	$(".header-mobile .nav").click(function(){
+		$(".wrp-sidebar").toggleClass("active");		
+	})
 });
 
 
